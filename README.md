@@ -15,8 +15,8 @@ Web上からトレーニング種目ごとトレーニングの記録を保存�
 ## デモ
 
 ## インストール方法
-`$ git clone https://github.com/C0118128/Training-Record-Servlet.git`　</br>
-ご自身のデータベースアドレスをJava HttpServlet内の変数、driverUrlに入力の上実行してください。
+ご自身のデータベースアドレスをJava HttpServlet内の変数、driverUrlに入力の上実行してください。　</br>
+`$ git clone https://github.com/C0118128/Training-Record-Servlet.git`
 
 ## 作者
 * Ryoto
