@@ -50,6 +50,7 @@ public class Search extends HttpServlet {
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<head>");
+			out.println("<link rel=\"stylesheet\" href=\"stylesheet.css\">");
 			out.println("<meta charset=\"UTF-8\">");
 			out.println("<title>トレーニング強度記録</title>");
 			out.println("</head>");

@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>トレーニング強度記録</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>筋トレ記録WEBアプリケーション</title>
+  </head>
+  <body>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>Training-Record</h1>
+        <h1>筋トレ記録WEBアプリケーション</h1>
+        <p>トレーニング種目ごとに記録管理を行えるWEBアプリケーションです。</p>
+      </div>
+    </div>
 
-<h1>トレーニング強度記録</h1>
+    <div class="main-wrapper">
+      <div class="container">
+        <h2>検索画面</h2>
+        <form action="Search" method="post">
+          種目:
+          <input type="radio" name="event" value="benchpress">BenchPress
+          <input type="radio" name="event" value="squat">Squat
+          <input type="radio" name="event" value="deadlift">DeadLift<br>
+          training_ID：<input type="text" name="training_ID"><br>
+          <input type="submit" name="btn1" value="送信">
+        </form>
+      </div>
+    </div>
 
-<h2>検索画面</h2>
-<form action="Search" method="post">
-種目:<input type="radio" name="event" value="benchpress">BenchPress
-<input type="radio" name="event" value="squat">Squat
-<input type="radio" name="event" value="deadlift">DeadLift<br>
-training_ID：<input type="text" name="training_ID"><br>
-<input type="submit" name="btn1" value="送信">
-</form>
+    <div class="index-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>index</h2>
+        </div>
+        <div class="btn-wrapper">
+          <a href="register.html" class="btn">レコード登録画面</a>
+          <a href="remove.html" class="btn">レコード削除画面</a>
+          <a href="Show" class="btn">全レコード確認画面</a>
+          <a href="search.html" class="btn">検索画面</a>
+        </div>
+      </div>
+    </div>
 
-<h2>Index</h2>
-<p><a href="top.html">topへ戻る</a></p>
-<p><a href="register.html">レコード登録画面</a></p>
-<p><a href="remove.html">レコード削除画面</a></p>
-<p><a href="Show">全レコード確認画面</a></p>
-
-
-</body>
+    <footer>
+      <div class="container">
+        <p>Author: Ryoto</p>
+      </div>
+    </fotter>
+  </body>
 </html>
