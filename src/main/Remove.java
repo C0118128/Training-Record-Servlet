@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Remove
  */
-@WebServlet("/ap2_final/Remove")
+@WebServlet("/main/Remove")
 public class Remove extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -43,11 +43,14 @@ public class Remove extends HttpServlet {
         PreparedStatement ps = null;
 
 		try {
+			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
 
+			//タイトル・ページ名の記述
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<head>");
+			out.println("<meta charset=\"UTF-8\">");
 			out.println("<title>トレーニング強度記録</title>");
 			out.println("</head>");
 			out.println("<body>");
@@ -55,7 +58,7 @@ public class Remove extends HttpServlet {
 			out.println("<h2>レコード削除画面</h2>");
 
 			//データベースへの接続
-			String driverUrl = "jdbc:derby:C:\\Users\\c0118128f5\\Documents\\JavaDB\\ap2_final;create=false";
+			String driverUrl = "jdbc:derby:C:\\Users\\c0118128f5\\Documents\\JavaDB\\TrainingRecord;create=false";
 
 			//コネクションの確立
 			con = DriverManager.getConnection(driverUrl, "db", "db");

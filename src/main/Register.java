@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Register
  */
-@WebServlet("/ap2_final/Register")
+@WebServlet("/main/Register")
 public class Register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -45,12 +45,14 @@ public class Register extends HttpServlet {
         PreparedStatement ps = null;
 
 		try {
+			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
 
 			//タイトル・ページ名の記述
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<head>");
+			out.println("<meta charset=\"UTF-8\">");
 			out.println("<title>トレーニング強度記録</title>");
 			out.println("</head>");
 			out.println("<body>");
@@ -58,7 +60,7 @@ public class Register extends HttpServlet {
 			out.println("<h2>レコード登録画面</h2>");
 
 			//データベースへの接続
-			String driverUrl = "jdbc:derby:C:\\Users\\c0118128f5\\Documents\\JavaDB\\ap2_final;create=false";
+			String driverUrl = "jdbc:derby:C:\\Users\\c0118128f5\\Documents\\JavaDB\\TrainingRecord;create=false";
 
 			//コネクションの確立
 			con = DriverManager.getConnection(driverUrl, "db", "db");

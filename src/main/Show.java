@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Show
  */
-@WebServlet("/ap2_final/Show")
+@WebServlet("/main/Show")
 public class Show extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -37,26 +37,28 @@ public class Show extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-
 		//コネクションとステートメントの宣言
         Connection con = null;
         Statement stmt = null;
         PreparedStatement ps = null;
 
 		try {
+			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
 
+			//タイトル・ページ名の記述
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>トレーニング強度記録</title>");
+			out.println("<meta charset=\"UTF-8\">");
+			out.println("<title>トレーニング種目</title>");
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<h1>トレーニング強度記録</h1>");
 			out.println("<h2>全レコード確認画面</h2>");
 
 			//データベースへの接続
-			String driverUrl = "jdbc:derby:C:\\Users\\c0118128f5\\Documents\\JavaDB\\ap2_final;create=false";
+			String driverUrl = "jdbc:derby:C:\\Users\\c0118128f5\\Documents\\JavaDB\\TrainingRecord;create=false";
 
 			//コネクションの確立
 			con = DriverManager.getConnection(driverUrl, "db", "db");
