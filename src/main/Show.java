@@ -51,11 +51,22 @@ public class Show extends HttpServlet {
 			out.println("<html>");
 			out.println("<head>");
 			out.println("<meta charset=\"UTF-8\">");
-			out.println("<title>トレーニング種目</title>");
+			out.println("<link rel=\"stylesheet\" href=\"stylesheet.css\">");
+			out.println("<title>筋トレ記録WEBアプリケーション</title>");
 			out.println("</head>");
 			out.println("<body>");
-			out.println("<h1>トレーニング強度記録</h1>");
+			out.println("<div class=\"top-wrapper\">");
+			out.println("<div class=\"container\">");
+			out.println("<h1>Training-Record</h1>");
+			out.println("<h1>筋トレ記録WEBアプリケーション</h1>");
+			out.println("<p>トレーニング種目ごとに記録管理を行えるWEBアプリケーションです。</p>");
+			out.println("</div>");
+			out.println("</div>");
+
+			out.println("<div class=\"main-wrapper\">");
+			out.println("<div class=\"container\">");
 			out.println("<h2>全レコード確認画面</h2>");
+
 
 			//データベースへの接続
 			String driverUrl = "jdbc:derby:C:\\Users\\c0118128f5\\Documents\\JavaDB\\TrainingRecord;create=false";
@@ -76,8 +87,11 @@ public class Show extends HttpServlet {
 				//SQL文のを実行
 				ResultSet rs = stmt.executeQuery(sql);
 
+				out.println("<div class=\"heading\">");
 				out.println("<h3>" + eventList[i] + "</h3>");
-				out.println("<table border=\"1\">");
+				out.println("</div>");
+				out.println("<div class=\"table\">");
+				out.println("<table border=\"1\" align=\"center\">");
 				out.println("<tr>");
 			    out.print("<td>" + "training_ID" + "</td>");
 			    out.print("<td>" + "date" + "</td>");
@@ -96,20 +110,40 @@ public class Show extends HttpServlet {
 				    out.println("</tr>");
 				}
 				out.println("</table>");
+				out.println("</div>");
 
 				//メモリの開放
 				rs.close();
 			}
 
 
-			out.println("<h2>Index</h2>");
-			out.println("<p><a href=\"top.html\">topへ戻る</a></p>");
-			out.println("<p><a href=\"register.html\">レコード登録画面</a></p>");
-			out.println("<p><a href=\"remove.html\">レコード削除画面</a></p>");
-			out.println("<p><a href=\"search.html\">検索画面</a></p>");
+			out.println("</form>");
+			out.println("</div>");
+			out.println("</div>");
 
+			//各ページへのリンクを作成
+			out.println("<div class=\"index-wrapper\">");
+			out.println("<div class=\"container\">");
+			out.println("<div class=\"heading\">");
+			out.println("<h2>index</h2>");
+			out.println("</div>");
+			out.println("<div class=\"btn-wrapper\">");
+			out.println("<a href=\"register.html\" class=\"btn\">レコード登録画面</a>");
+			out.println("<a href=\"remove.html\" class=\"btn\">レコード削除画面</a>");
+			out.println("<a href=\"Show\" class=\"btn\">全レコード確認画面</a>");
+			out.println("<a href=\"search.html\" class=\"btn\">検索画面</a>");
+			out.println("</div>");
+			out.println("</div>");
+			out.println("</div>");
+
+			out.println("<footer>");
+			out.println("<div class=\"container\">");
+			out.println("<p>Author: Ryoto</p>");
+			out.println("</div>");
+			out.println("</fotter>");
 			out.println("</body>");
 			out.println("</html>");
+
 
 		} catch (Exception e) {
             //サーブレット内での例外をアプリケーションのエラーとして表示
