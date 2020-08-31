@@ -12,7 +12,7 @@ Web上からトレーニング種目ごとトレーニングの記録を保存�
 
 * eclipe上でのアプリケーション実行(Apache Tomcat v8.5)
 ## デモの目次
-***Heroku上でデモを公開しています。***
+***[Heroku](https://trainingrecord.herokuapp.com/)上でデモを公開しています。***
 
 * [トップ画面](#トップ画面)
 * [レコード登録画面](#レコード登録画面)
@@ -32,35 +32,35 @@ This sample code is under [MIT license](https://en.wikipedia.org/wiki/MIT_Licens
 
 ## デモ
 ### トップ画面
-![トップ画面](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%88%E3%83%83%E3%83%97%E7%94%BB%E9%9D%A2.png) </br>
+![トップ画面](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%88%E3%83%83%E3%83%97%E7%94%BB%E9%9D%A2ver2.png) </br>
 [目次へ戻る](#デモの目次)
 
 ---
 
 ### レコード登録画面
-![レコード登録画面入力](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%99%BB%E9%8C%B2%E7%94%BB%E9%9D%A2%E5%85%A5%E5%8A%9B.png) </br>
+![レコード登録画面入力](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%99%BB%E9%8C%B2%E7%94%BB%E9%9D%A2%E5%85%A5%E5%8A%9Bver2.png) </br>
 </br>
-![レコード登録画面結果](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%99%BB%E9%8C%B2%E7%94%BB%E9%9D%A2%E7%B5%90%E6%9E%9C.png) </br>
+![レコード登録画面結果](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%99%BB%E9%8C%B2%E7%94%BB%E9%9D%A2%E7%B5%90%E6%9E%9Cver2.png) </br>
 [目次へ戻る](#デモの目次)
 
 ---
 
 ### 全レコード確認画面
-![全レコード確認画面](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E5%85%A8%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%A2%BA%E8%AA%8D%E7%94%BB%E9%9D%A2.png) </br>
+![全レコード確認画面](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E5%85%A8%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E7%A2%BA%E8%AA%8D%E7%94%BB%E9%9D%A2ver2.png) </br>
 [目次へ戻る](#デモの目次)
 
 ---
 
 ### レコード削除画面
-![レコード削除画面入力](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E5%89%8A%E9%99%A4%E7%94%BB%E9%9D%A2%E5%85%A5%E5%8A%9B.png) </br>
+![レコード削除画面入力](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E5%89%8A%E9%99%A4%E7%94%BB%E9%9D%A2%E5%85%A5%E5%8A%9Bver2.png) </br>
 </br>
-![レコード削除画面結果](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E5%89%8A%E9%99%A4%E7%94%BB%E9%9D%A2%E7%B5%90%E6%9E%9C.png) </br>
+![レコード削除画面結果](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E5%89%8A%E9%99%A4%E7%94%BB%E9%9D%A2%E7%B5%90%E6%9E%9Cver2.png) </br>
 [目次へ戻る](#デモの目次)
 
 ---
 
 ### 検索画面
-![検索画面入力](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E6%A4%9C%E7%B4%A2%E7%94%BB%E9%9D%A2%E5%85%A5%E5%8A%9B.png) </br>
+![検索画面入力](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E6%A4%9C%E7%B4%A2%E7%94%BB%E9%9D%A2%E5%85%A5%E5%8A%9Bver2.png) </br>
 </br>
-![検索画面結果](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E6%A4%9C%E7%B4%A2%E7%94%BB%E9%9D%A2%E7%B5%90%E6%9E%9C.png) </br>
+![検索画面結果](https://github.com/C0118128/Training-Record-Servlet/blob/doc/images/%E6%A4%9C%E7%B4%A2%E7%94%BB%E9%9D%A2%E7%B5%90%E6%9E%9Cver2.png) </br>
 [目次へ戻る](#デモの目次)
